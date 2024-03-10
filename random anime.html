@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizador de Personagens de Animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Escondendo todas as imagens inicialmente */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personagem de Anime Aleatório</h1>
+        <div class="image-container">
+    
+            <img class="anime1" src="https://i.pinimg.com/564x/7c/ff/a1/7cffa15ffffdac5452dcfcb1f8787c17.jpg" alt="Satoru Gojo" height="350px" >
+            <img class="anime2" src="https://i.pinimg.com/564x/6a/18/46/6a18463fdd706bab2fff52183791c05e.jpg"  alt="Goku" height="350px">
+            <img class="anime3" src="https://i.pinimg.com/236x/09/3c/48/093c4838360d6d06501e98fdc32f4648.jpg" alt="Luffy" height="350px">
+            <img class="anime4" src="https://i.pinimg.com/236x/a0/ed/2d/a0ed2ddd24aab61f9f02293b8ace2a77.jpg"   alt="Gon" height="350px" >
+            <img class="anime5" src="https://i.pinimg.com/236x/c3/8a/06/c38a0662a2c7efbdd2fcc6afe1b4fc9e.jpg"  alt="Eren" height="350px" > 
+            <img class="anime6" src="https://i.pinimg.com/236x/69/af/bb/69afbb528d0ddcf3bd61acf6f66d77f4.jpg" alt="Saitama" height="350px" >
+            <img class="anime7" src="https://i.pinimg.com/236x/0a/66/6c/0a666cb60952d415c16e247c96291789.jpg" alt="Naruto" height="350px" >
+            <img class="anime8" src="https://i.pinimg.com/236x/ff/f5/15/fff515feeac0de5f8138941afd1cd6c9.jpg"  alt="Light Yagami" height="350px" >
+            <img class="anime9" src="https://i.pinimg.com/236x/65/09/a5/6509a5402e1851dc52544fb8d6c08cd2.jpg" alt="Jotaro Kujo" height="350px" >
+            <img class="anime10" src="https://i.pinimg.com/236x/d5/39/90/d539901bb9d399ad2fd9dd5cfdeb702f.jpg" alt="Asuna Yuuki" height="350px" >
+            <img class="anime11" src="https://i.pinimg.com/236x/f3/78/96/f37896c54355b9ad4a6d1c8d43fabb25.jpg" alt="Itachi Uchiha" height="350px" >
+            <img class="anime12" src="https://i.pinimg.com/236x/ab/c0/04/abc004c69f9352919458557fde0e8960.jpg" alt="Genos" height="350px" >
+            <img class="anime13" src="https://i.pinimg.com/236x/58/37/0c/58370c44206b9a040f579628f95dfd12.jpg"  alt="Yuji Itadori" height="350px" >
+            <img class="anime14" src="https://i.pinimg.com/474x/76/3b/3d/763b3d6599acaca0e97191113d0961a3.jpg" alt="Ryomen Sukuna" height="350px" >          
+            <img class="anime15" src="https://i.pinimg.com/236x/44/97/ed/4497ed609c218c5d95fa2812af64562c.jpg"  alt="Yuta Okkotsu" height="350px" >
+            <img class="anime16" src="https://i.pinimg.com/236x/d2/e7/52/d2e7525598a4d2a556ff76eb92a81958.jpg" alt="Madara Uchiha" height="350px" >           
+            <img class="anime17" src="https://i.pinimg.com/236x/89/60/56/896056ec3e9dbe88f0a1fdf9f0fdfc17.jpg" alt="Roronoa Zoro" height="350px" >
+            <img class="anime18" src="https://i.pinimg.com/236x/f4/e1/fe/f4e1fe45793230225fc253a1c0ce251f.jpg" alt="Kilua" height="350px" >           
+            <img class="anime19" src="https://i.pinimg.com/236x/bc/8b/b1/bc8bb101895ed8f2beff898258665942.jpg" alt="Sasuke Uchiha" height="350px" >
+            <img class="anime20" src="https://i.pinimg.com/236x/24/ef/40/24ef40ec8bbf6730e5b3ff46347f804b.jpg" alt="Nami" height="350px" >            
+            <img class="anime21" src="https://i.pinimg.com/236x/84/ae/a8/84aea8fdc3a37c1ca15a417ad2af2084.jpg" alt="Anya" height="350px" >
+            <img class="anime22" src="https://i.pinimg.com/236x/2d/4b/10/2d4b10e096307b4c244ae7f57af3e755.jpg"     alt="Loyd Forger" height="350px" >           
+            <img class="anime23" src="https://i.pinimg.com/474x/48/df/5e/48df5e5c818df6eb602f076dcd6dce0e.jpg"   alt="Aoi Todo" height="350px" >
+            <img class="anime24" src="https://i.pinimg.com/236x/b4/f0/ba/b4f0ba7b8769b453445f881199a051c9.jpg" alt="Kenjaku" height="350px" >          
+            <img class="anime25" src="https://i.pinimg.com/736x/69/ee/65/69ee65519f458c2729f53e7fc13456bf.jpg" alt="Hakari" height="350px" >
+            <img class="anime26" src="https://i.pinimg.com/474x/80/a0/f5/80a0f562b3e802a1ca3cc6b98898420d.jpg" alt="Higuruma" height="350px" >          
+            <img class="anime27" src="https://i.pinimg.com/236x/f3/6f/a3/f36fa35144d20e7e7f362748323d9984.jpg" alt="Izuku Midoriya" height="350px" >
+            <img class="anime28" src="https://i.pinimg.com/236x/50/b5/4f/50b54f8a6e5fcff4e63cbea0ddd9626b.jpg" alt="Uraraka" height="350px" >    
+            <img class="anime29" src="https://i.pinimg.com/236x/49/81/52/4981525a7cae57c8ee311699ab237eb2.jpg" alt="Sakura Haruno" height="350px" >
+            <img class="anime30" src="https://i.pinimg.com/236x/a0/bc/38/a0bc38cd33ca19e23e3340336d39c73a.jpg"   alt="Ino Iamanaka" height="350px" >      
+            <img class="anime31" src="https://i.pinimg.com/474x/7d/4b/f1/7d4bf1765996bed5eefb97255fdc1a2e.jpg"   alt="Mei Mei" height="350px" >
+            <img class="anime32" src="https://i.pinimg.com/236x/df/07/21/df0721174871e2aee3b58b98050afab5.jpg" alt="Uraume" height="350px">         
+            <img class="anime33" src="https://i.pinimg.com/236x/57/3b/96/573b960830135a635f4e4f8932a78741.jpg" alt="Utahime" height="350px" >
+            <img class="anime34" src="https://i.pinimg.com/236x/93/50/af/9350af54ba1232d704a8707e37744f6f.jpg" alt="Suguro geto" height="350px" >           
+            <img class="anime35" src="https://i.pinimg.com/236x/a0/c3/fe/a0c3fec321f129d404943630f1e769b5.jpg" alt="Ichigo Kurosaki" height="350px" >
+            <img class="anime36" src="https://i.pinimg.com/236x/a4/f4/79/a4f4793ca387e7fe2b74cec830a84499.jpg" alt="Mikasa Ackerman" height="350px" >           
+            <img class="anime37" src="https://i.pinimg.com/236x/40/e4/f2/40e4f222740a74b3a284a900e3fdeead.jpg"  alt="Levi Ackerman" height="350px" >
+            <img class="anime38" src="https://i.pinimg.com/236x/ca/55/5f/ca555fe3206cb7c0473603b1cd272cf5.jpg" alt="Natsu Dragneel" height="350px" >            
+            <img class="anime39" src="https://i.pinimg.com/236x/a7/08/46/a70846a58007be74ffcbc6e5295c304f.jpg"    alt="L" height="350px" >
+            <img class="anime40" src="https://i.pinimg.com/236x/9e/9a/f1/9e9af17b7dde02ba2febafb36b81301e.jpg" alt="Hange Zoe" height="350px" >            
+            <img class="anime41" src="https://i.pinimg.com/236x/d1/6e/bb/d16ebb0e036229853f0f4e731c5f8c2a.jpg" alt="Alucard" height="350px" >
+            <img class="anime42" src="https://i.pinimg.com/236x/91/8f/a7/918fa7eca03bdcfcc76255cda0795fa7.jpg" alt="Kirito" height="350px" >            
+            <img class="anime43" src="https://i.pinimg.com/236x/a5/ef/8a/a5ef8a04682996ecfaea877f3932566c.jpg" alt="Hinata Hyuga" height="350px">
+            <img class="anime44" src="https://i.pinimg.com/236x/2a/4e/30/2a4e30b49bb1a18873df46469f3ab060.jpg" alt="Shoto Aizawa" height="350px" >           
+            <img class="anime45" src="https://i.pinimg.com/236x/39/7f/0a/397f0af261f6ed134f1d27aa4a7571dc.jpg" alt="Tanjiro Kamado" height="350px" >
+            <img class="anime46" src="https://i.pinimg.com/236x/29/44/1b/29441b9a1469e0acdc98e216cc90f235.jpg" alt="Zanitsu Agatsuma" height="350px" >  
+            <img class="anime47" src="https://i.pinimg.com/236x/b5/7c/db/b57cdbc9f87989a2c480195c60475d45.jpg" alt="Sanji" height="350px" >
+            <img class="anime48" src="https://i.pinimg.com/236x/f7/f0/c3/f7f0c3a27feca210f8b53edc33936ad8.jpg"  alt="Nico Robin" height="350px" >    
+            <img class="anime49" src="https://i.pinimg.com/236x/b2/9e/c1/b29ec1c6e6bc8598b64a57d3f37ab172.jpg" alt="Armin Alert" height="350px" >
+            <img class="anime50" src="https://i.pinimg.com/236x/06/f9/ea/06f9ea3456143fb1c22e672f3715e42f.jpg" alt="Vegeta" height="350px" >   
+            <img class="anime51" src="https://i.pinimg.com/236x/0c/b8/3f/0cb83fc6aa88f66ef4a95e09d92aee26.jpg" alt="Saber" height="350px" >    
+            <img class="anime52" src="https://i.pinimg.com/236x/ca/d7/8d/cad78d285b748e60c5ed8cf30583c90d.jpg" alt="Gilgamesh" height="350px" >     
+            <img class="anime53" src="https://i.pinimg.com/236x/7e/03/1a/7e031adbf9de479368152ffe66104222.jpg" alt="Sans" height="350px" >
+            <img class="anime54" src="https://i.pinimg.com/236x/50/be/03/50be03315e93a5ce7adc9a8ee9ae94f2.jpg" alt="Yamato" height="350px" >          
+            <img class="anime55" src="https://i.pinimg.com/236x/28/5e/6e/285e6e3c1053f9d9f945cb64483845ff.jpg" alt="Nezuko" height="350px" >
+            <img class="anime56" src="https://i.pinimg.com/236x/fc/c3/37/fcc3378169b2c8841c5cd37f5f282d5e.jpg" alt="Mitsuri" height="350px" >          
+            <img class="anime57" src="https://i.pinimg.com/236x/a1/e4/4b/a1e44b229d422308aee03bdebfaa7f56.jpg" alt="Guts" height="350px" >
+            <img class="anime58" src="https://i.pinimg.com/236x/d9/07/79/d9077973ffaa7df42200953eba0f3467.jpg" alt="Griffith" height="350px" >          
+            <img class="anime59" src="https://i.pinimg.com/236x/9d/e5/d2/9de5d2ab40011b354914c778341e3bff.jpg"  alt="Toji Fushiguro" height="350px" >
+            <img class="anime60" src="https://i.pinimg.com/236x/79/bf/7c/79bf7c4e965dace2c79ffb165ed750a3.jpg" alt="Nobara Kugisaki" height="350px" >    
+            <img class="anime61" src="https://i.pinimg.com/236x/01/c3/61/01c3618098a0ea6dad31592e86de8548.jpg" alt="Megumi Fushiguro" height="350px" >
+            <img class="anime62" src="https://i.pinimg.com/736x/0b/08/1e/0b081e3226cab33dc78f7387fe55bf44.jpg" alt="Mahoraga" height="350px" >     
+            <img class="anime63" src="https://i.pinimg.com/236x/0d/7a/52/0d7a522fb0ba1138f5ecd5338a66fd2d.jpg" alt="Kusakabe" height="350px" >
+            <img class="anime64" src="https://i.pinimg.com/236x/67/4d/53/674d53bd07782870379436af36699eb5.jpg" alt="Tatsumaki" height="350px" >  
+            <img class="anime65" src="https://i.pinimg.com/474x/3c/30/19/3c3019e88433a623a98549bc2fc1dff2.jpg" alt="Fubuki" height="350px" >
+            <img class="anime66" src="https://i.pinimg.com/236x/c4/a9/bf/c4a9bf2761014cdacbdbe465073831c2.jpg" alt="Karin Kitagawa" height="350px" >   
+            <img class="anime67" src="https://i.pinimg.com/236x/0f/0b/03/0f0b03f23e1b467e7adbb566a8c1260d.jpg" alt="Tsunade" height="350px" >
+            <img class="anime68" src="https://i.pinimg.com/236x/f9/67/fe/f967feaefbcba01e06f31ff0097bc3d6.jpg" alt="Daki" height="350px" >   
+            <img class="anime69" src="https://i.pinimg.com/236x/57/e6/ca/57e6ca6321f58b33c7de62014c0ffdcc.jpg" alt="Shinobu" height="350px" >
+            <img class="anime70" src="https://i.pinimg.com/236x/dd/d4/0f/ddd40f27d23080ddf4457b78b86cac93.jpg" alt="Maki" height="350px" >  
+            <img class="anime71" src="https://i.pinimg.com/236x/3d/b0/b4/3db0b48203879848392e77260f1dc645.jpg"  alt="Mai" height="350px" >
+            <img class="anime72" src="https://i.pinimg.com/236x/54/fa/c3/54fac34ce97e1326d131958a0ddaba89.jpg" alt="Aqua" height="350px" > 
+            <img class="anime73" src="https://i.pinimg.com/236x/7f/62/ad/7f62ad1ca760f7f7281a6e237410761c.jpg" alt="Megumin" height="350px" >
+            <img class="anime74" src="https://i.pinimg.com/236x/33/b3/5e/33b35ec3fb401c94b22c5a039df239ec.jpg" alt="Darkness" height="350px" >         
+            <img class="anime75" src="https://i.pinimg.com/236x/f7/0f/e3/f70fe33921040bc4cb5a552ec94c52c3.jpg" alt="Rimuru" height="350px" >
+            <img class="anime76" src="https://i.pinimg.com/236x/49/5f/33/495f33b11d996dc6fb50e2b74e534d6e.jpg" alt="Power" height="350px" >   
+            <img class="anime77" src="https://i.pinimg.com/236x/a6/4a/ed/a64aedf8422595bb5f0e62b798f1f5df.jpg" alt="Makima" height="350px" >
+            <img class="anime78" src="https://i.pinimg.com/236x/5f/9c/09/5f9c099498bd7df87e1966c3d05d4e0b.jpg"   alt="Boa Hancock" height="350px" >  
+            <img class="anime79" src="https://i.pinimg.com/236x/d9/84/ce/d984ce100900b6763b8aec774edfde47.jpg"   alt="Zero Two" height="350px" >
+            <img class="anime80" src="https://i.pinimg.com/236x/7f/3e/22/7f3e22291ed29e6a36374d71f1490fd7.jpg"  alt="Yor" height="350px" >   
+            <img class="anime81" src="https://i.pinimg.com/474x/c1/37/df/c137df948ce072bb752b8c2a24332cc9.jpg" alt="Himiko Toga" height="350px" >
+            <img class="anime82" src="https://i.pinimg.com/236x/26/17/eb/2617eb6e174e788b2bff461121dbe20c.jpg"  alt="Misa Amane" height="350px" >  
+            <img class="anime83" src="https://i.pinimg.com/236x/6d/dc/3b/6ddc3b56aacc393487ecf931c6c6a44c.jpg"  alt="Uta" height="350px" >
+            <img class="anime84" src="https://i.pinimg.com/236x/9f/3b/1a/9f3b1ab3fb741c18e33fa8ebab6381b1.jpg"  alt="Lisa Lisa" height="350px" > 
+            <img class="anime85" src="https://i.pinimg.com/236x/9f/02/06/9f0206c1174de5b29a2b14f45b5d6b10.jpg" alt="Joelyne" height="350px" >
+            <img class="anime86" src="https://i.pinimg.com/236x/18/fe/c7/18fec7fbddf2f5b89aa1e22c0d05068d.jpg" alt="Josephe Joestar" height="350px" >     
+            <img class="anime87" src="https://i.pinimg.com/236x/5a/7a/ea/5a7aeae647e70d929c20f77a876570bd.jpg"   alt="Dio Brando" height="350px" >
+            <img class="anime88" src="https://i.pinimg.com/236x/c3/b0/d0/c3b0d071209b493569478de33547d679.jpg" alt="Kaguya" height="350px" >
+            <img class="anime89" src="https://i.pinimg.com/236x/b9/a6/b0/b9a6b0de179d15dbe457eeae3188c611.jpg" alt="Sarada Uchiha" height="350px" >
+            <img class="anime90" src="https://i.pinimg.com/236x/24/ed/b3/24edb34a2a2e00d29e27201a917ea333.jpg" alt="Mahito" height="350px" >      
+            <img class="anime91" src="https://i.pinimg.com/236x/3c/84/ec/3c84ec417d6b0688d5b29d1a1a3194cd.jpg" alt="Minato" height="350px" >
+            <img class="anime92" src="https://i.pinimg.com/236x/d7/3e/9f/d73e9fefc6cc952ae57fa9c6433deb81.jpg" alt="Kushina" height="350px" >         
+            <img class="anime93" src="https://i.pinimg.com/236x/4d/cb/1f/4dcb1f90de534da452afa8936b7dc6d8.jpg" alt="Obito" height="350px" >
+            <img class="anime94" src="https://i.pinimg.com/236x/7b/d0/fa/7bd0fa1656cf2315b969cf5ed6469fd8.jpg"  alt="Rin" height="350px" >           
+            <img class="anime95" src="https://i.pinimg.com/236x/e8/dc/d5/e8dcd5cc0a7cceb9fc84f927f963b794.jpg" alt="Konan" height="350px" >
+            <img class="anime96" src="https://i.pinimg.com/236x/28/14/d3/2814d3f4b243a87d2150363729f3d732.jpg" alt="Kakashi" height="350px" >           
+            <img class="anime97" src="https://i.pinimg.com/236x/19/d8/17/19d8178604235a688dd95276c16b399d.jpg" alt="Gohan" height="350px" >
+            <img class="anime98" src="https://i.pinimg.com/474x/07/12/a1/0712a12d6527a05e1006b63242f3e9a6.jpg" alt="Bulma" height="350px" >            
+            <img class="anime99" src="https://i.pinimg.com/474x/3f/b0/a7/3fb0a78589a61adcc9cc22e1b18af16a.jpg" alt="Boruto" height="350px" > 
+            <img class="anime100" src="https://i.pinimg.com/236x/b8/cc/41/b8cc4193cc07400aa8324ac24eae4bcd.jpg"  alt="Chi Chi" height="350px" > 
+            <img class="anime101" src="https://i.pinimg.com/236x/c4/ae/1c/c4ae1cac6f0c7e1d283d0e2f7ea40f3a.jpg" alt="Android 18" height="350px" >     
+            <img class="anime102" src="https://i.pinimg.com/236x/8c/f5/91/8cf591652e482b1643d2d22ba8406b1c.jpg" alt="Kuririn" height="350px" >
+            <img class="anime103" src="https://i.pinimg.com/236x/9d/8b/3c/9d8b3c9522962eb4f483b952fb806e99.jpg" alt="Akame" height="350px" >
+            <img class="anime104" src="https://i.pinimg.com/236x/00/a5/03/00a5034a6c05c21d06b3c02133bc51b2.jpg" alt="Ryuk" height="350px" >
+            <img class="anime105" src="https://i.pinimg.com/236x/e3/dd/1c/e3dd1c5e0393d2035ac164839203f4c5.jpg" alt="Shoto Todoroki" height="350px" >
+            <img class="anime106" src="https://i.pinimg.com/236x/09/8b/dc/098bdcb418ba690d70d0a2dce57ce0d2.jpg" alt="Eri" height="350px" >
+            <img class="anime107" src="https://i.pinimg.com/236x/81/00/0e/81000e2e4c140471b113b8c9feb98cae.jpg" alt="Mob" height="350px" >
+            <img class="anime108" src="https://i.pinimg.com/236x/58/00/4f/58004f8e6f7664752cc247ad3df1b7a8.jpg"  alt="Ken Kaneki" height="350px" >
+            <img class="anime109" src="https://i.pinimg.com/236x/2f/18/38/2f1838b92569e275637c52bfcb13c251.jpg" alt="Rize" height="350px" >
+            <img class="anime110" src="https://i.pinimg.com/236x/88/a7/37/88a7374a27ef68412bd4d114bd4ad16e.jpg" alt="Touka" height="350px" >
+            <img class="anime111" src="https://i.pinimg.com/236x/2b/1f/42/2b1f4231d3a5ef27f324cd3b7278603b.jpg" alt="Nikolas Tesla" height="350px" >
+            <img class="anime112" src="https://i.pinimg.com/236x/7c/1d/9d/7c1d9d3da8f442d789f0ee3fd63ba169.jpg" alt="Eva" height="350px" >
+            <img class="anime113" src="https://i.pinimg.com/236x/ca/07/91/ca0791b8410c4fdf4542e57429130018.jpg" alt="Adão" height="350px" >
+            <img class="anime114" src="https://i.pinimg.com/236x/99/a0/22/99a02224bc1d3603450a62ce5d6b24c1.jpg"  alt="Big Mon" height="350px" >          
+            <img class="anime115" src="https://i.pinimg.com/236x/de/35/33/de353338fad809b82cb4a1959b192f74.jpg" alt="Katakuri" height="350px" >
+            <img class="anime116" src="https://i.pinimg.com/236x/fd/1d/5b/fd1d5bdb9eb1f207073f614be842a889.jpg" alt="Musashi Miyamoto" height="350px" >           
+            <img class="anime117" src="https://i.pinimg.com/236x/3b/97/ba/3b97ba9d4c8cd2154b5c210581aa7ed9.jpg" alt="Shikimori-San" height="350px" >
+            <img class="anime118" src="https://i.pinimg.com/236x/db/12/d7/db12d7c02adcd151ce86cc9547335648.jpg" alt="Rukia" height="350px" >           
+            <img class="anime119" src="https://i.pinimg.com/236x/fc/4a/02/fc4a02d4c5cc70d9fc8f6ff82f64cf4a.jpg" alt="Erza Scarlet" height="350px" >
+            <img class="anime120" src="https://i.pinimg.com/236x/cc/bc/e4/ccbce41bc96179b28b9ec3b19f50e4aa.jpg" alt="Law" height="350px" >            
+            <img class="anime121" src="https://i.pinimg.com/474x/65/87/88/65878835865350b9a2602cd73536787e.jpg" alt="Ace" height="350px" >
+            <img class="anime122" src="https://i.pinimg.com/236x/53/d6/bc/53d6bcdcb288c9cd3d301592bf600a7e.jpg" alt="Smoker" height="350px" >           
+            <img class="anime123" src="https://i.pinimg.com/236x/4d/9b/a9/4d9ba9a5cb079194ef884d75105c12dc.jpg" alt="Frieza" height="350px" >
+            <img class="anime124" src="https://i.pinimg.com/236x/c4/c6/e1/c4c6e175abd9fcba375d895fe87aaa61.jpg" alt="Bills" height="350px" >          
+            <img class="anime125" src="https://i.pinimg.com/236x/48/60/73/4860734cc5b14769bd3b5fdcbbf32146.jpg" alt="Orochimaru" height="350px" >
+            <img class="anime126" src="https://i.pinimg.com/236x/53/1e/04/531e0450d6c40c42c333b749fcd486f3.jpg" alt="Near" height="350px" >          
+            <img class="anime127" src="https://i.pinimg.com/236x/f7/79/4d/f7794d7971f8b36dbf73b01fe7c3a6e5.jpg" alt="Sasha Blouse" height="350px" >
+            <img class="anime128" src="https://i.pinimg.com/236x/a6/5f/f2/a65ff2787f8d59a95ddd4d5f7e8637c7.jpg" alt="Momo Yaoyorozou" height="350px" >    
+            <img class="anime129" src="https://i.pinimg.com/236x/fb/04/f0/fb04f0cb47974349ac813b7895d2213b.jpg" alt="Byakuya" height="350px" >
+            <img class="anime130" src="https://i.pinimg.com/236x/f7/82/dd/f782ddaf323c2ceda30bc494cb9c2fd6.jpg" alt="Ash" height="350px" >      
+            <img class="anime131" src="https://i.pinimg.com/236x/34/60/57/346057240ed2e8519f45b93c5b9619b3.jpg" alt="Metal Bat" height="350px" >
+            <img class="anime132" src="https://i.pinimg.com/236x/56/8a/fc/568afcb61c44eac8879bfc875fb267f1.jpg" alt="Sonic" height="350px" >         
+            <img class="anime133" src="https://i.pinimg.com/236x/c1/09/fe/c109fe36a904b42126fa04323d16b3a3.jpg" alt="Meliodas" height="350px" >
+            <img class="anime134" src="https://i.pinimg.com/236x/87/f6/ea/87f6eaf5db74070cf97e4d66df300115.jpg" alt="Elizabeth" height="350px" >           
+            <img class="anime135" src="https://i.pinimg.com/236x/84/91/d8/8491d8231f30dc5331556ce660a51f01.jpg" alt="Merlin" height="350px" >
+            <img class="anime136" src="https://i.pinimg.com/236x/16/e8/8d/16e88d14ede91b82bbee23bf00f31dc6.jpg" alt="Arthur" height="350px" >           
+            <img class="anime137" src="https://i.pinimg.com/236x/7c/7d/bf/7c7dbfcdac80d44167dbead4ab542d6e.jpg" alt="Jericó" height="350px" >
+            <img class="anime138" src="https://i.pinimg.com/236x/6c/02/c5/6c02c50e649587ca8c4ced0f53059820.jpg" alt="Diane" height="350px" >            
+            <img class="anime139" src="https://i.pinimg.com/236x/47/e4/cd/47e4cd91a678fde89452172465d2f13a.jpg" alt="Annie Leonhart" height="350px" >
+            <img class="anime140" src="https://i.pinimg.com/236x/94/b4/7c/94b47cc2e4454bcc67ed23a0bd11e4fd.jpg" alt="Kaido" height="350px" >            
+            <img class="anime141" src="https://i.pinimg.com/236x/97/12/77/971277e6985cdf67451ad64188192f2b.jpg" alt="Asta" height="350px" >
+            <img class="anime142" src="https://i.pinimg.com/564x/ba/3e/7c/ba3e7c3e998e5ec445702ff73c8652dc.jpg" alt="Noelle" height="350px" >            
+            <img class="anime143" src="https://i.pinimg.com/236x/05/f4/f2/05f4f22eaad4071686e376f991dce2b8.jpg" alt="Mimosa" height="350px" >
+            <img class="anime144" src="https://i.pinimg.com/236x/9b/be/f8/9bbef86ad817280e9b77d494bb236442.jpg" alt="Yami" height="350px" >           
+            <img class="anime145" src="https://i.pinimg.com/236x/6a/8d/f4/6a8df424f54a00751e4be455208c3bde.jpg" alt="Yuno" height="350px" >
+            <img class="anime146" src="https://i.pinimg.com/236x/49/9e/cf/499ecf4967534ffa0797a3a441877bc8.jpg" alt="Lily" height="350px" >  
+            <img class="anime147" src="https://i.pinimg.com/236x/5a/64/8f/5a648fb57f18f93d0ffe75aab87f45dd.jpg" alt="Senku" height="350px" >
+            <img class="anime148" src="https://i.pinimg.com/236x/90/ed/47/90ed47571a8a1eed4224f76ed9f11155.jpg" alt="Garou" height="350px" >    
+            <img class="anime149" src="https://i.pinimg.com/236x/ed/1b/b7/ed1bb71853543270f604d3d45b2f9101.jpg" alt="Nero" height="350px" >
+            <img class="anime150" src="https://i.pinimg.com/236x/77/d7/77/77d7770960a2176f5e0e3c624d15aef5.jpg" alt="Vanessa" height="350px" >     
+            <img class="anime151" src="https://i.pinimg.com/236x/0a/0d/7f/0a0d7ff841c686dd8d854eb4ae25a093.jpg" alt="Isagi" height="350px" >
+            <img class="anime152" src="https://i.pinimg.com/236x/29/81/a2/2981a2efcb8f97cdd82968e3ae2288ed.jpg" alt="Ban" height="350px" >       
+            <img class="anime153" src="https://i.pinimg.com/236x/e6/a0/33/e6a0335c3b6b0ee969532e066dec05ea.jpg" alt="god" height="350px" >
+            <img class="anime154" src="https://i.pinimg.com/236x/ed/38/6a/ed386a743bebd52e0b0623bbecb2e362.jpg"  alt="Sae Itoshi" height="350px" >          
+            <img class="anime155" src="https://i.pinimg.com/236x/c5/ad/77/c5ad774e56337a00e7fbf9caa9a79c53.jpg" alt="Sylvia Sherwood" height="350px" >
+            <img class="anime156" src="https://i.pinimg.com/236x/70/b0/09/70b0093420db1d68bf2c6f6bdfbedfd9.jpg" alt="Hiro" height="350px" >          
+            <img class="anime157" src="https://i.pinimg.com/236x/4f/46/ab/4f46abd8ec6eeaef959ab5eea8a0e08d.jpg" alt="Mash" height="350px" >
+            <img class="anime158" src="https://i.pinimg.com/474x/d4/8a/70/d48a708798e36fcbab438b5b11de0ec1.jpg" alt="Sung Jinwoo" height="350px" >          
+            <img class="anime159" src="https://i.pinimg.com/236x/a0/1f/4c/a01f4cf2f3a1ed60cea0c1e3de5bc928.jpg" alt="Himawari" height="350px" >
+            <img class="anime160" src="https://i.pinimg.com/236x/06/c5/bc/06c5bc592854cd368a77952acc71fc7f.jpg" alt="Edward Elric" height="350px" >    
+            <img class="anime161" src="https://i.pinimg.com/236x/fb/97/0f/fb970f01cc701ba54308bd36b2958192.jpg" alt="Spike Spiegel" height="350px" >
+            <img class="anime162" src="https://i.pinimg.com/236x/6d/cb/95/6dcb9554b340bc348e3aabb54e83993b.jpg" alt="Goku Black" height="350px" >     
+            <img class="anime163" src="https://i.pinimg.com/236x/fc/f7/73/fcf7736bdba41516831efaec882c2f53.jpg"  alt="Rei Demonio" height="350px" >
+            <img class="anime164" src="https://i.pinimg.com/236x/fa/53/9b/fa539bec797a42abafe7116d3fc81efa.jpg" alt="Gaara" height="350px" >  
+            <img class="anime165" src="https://i.pinimg.com/236x/af/ac/34/afac34d0a47aad2cdfaa6b9c53a88cd0.jpg" alt="Piccolo" height="350px" >
+            <img class="anime166" src="https://i.pinimg.com/236x/cd/7e/fe/cd7efe785dd7971d46c1179d6bf87045.jpg" alt="Chad" height="350px" >   
+            <img class="anime167" src="https://i.pinimg.com/236x/de/1a/57/de1a57a25aab119d197f0d464cb07c78.jpg" alt="Jiraiya" height="350px" >
+            <img class="anime168" src="https://i.pinimg.com/236x/ee/65/f1/ee65f1e0877273691614b437d6e2a511.jpg" alt="Shikamaru" height="350px" >   
+            <img class="anime169" src="https://i.pinimg.com/236x/dc/72/ae/dc72aeb4964d8d7c4f68944be9850db5.jpg" alt="Ymir" height="350px" >
+            <img class="anime170" src="https://i.pinimg.com/236x/07/be/60/07be6080299793ab8da2c69fc54fdc7d.jpg" alt="Jogo" height="350px" >  
+            <img class="anime171" src="https://i.pinimg.com/236x/76/06/a8/7606a89884747ad6cc0d1eb5c27f4241.jpg" alt="Choso" height="350px" >
+            <img class="anime172" src="https://i.pinimg.com/236x/f4/fa/56/f4fa56631d6d28715944ea7635debc9c.jpg"   alt="Ui Ui" height="350px" > 
+            <img class="anime173" src="https://i.pinimg.com/236x/d4/8e/96/d48e966eeefb595cf1df6deabcf6c535.jpg" alt="Shoko Leiri" height="350px" >
+            <img class="anime174" src="https://i.pinimg.com/236x/67/0e/f0/670ef0bf36e238353d474b5e151c9972.jpg" alt="Rika Orimoto" height="350px" >         
+            <img class="anime175" src="https://i.pinimg.com/236x/04/cb/2a/04cb2a4692710d87b5ff24f96419b4d2.jpg" alt="Riko Amanai" height="350px" >
+            <img class="anime176" src="https://i.pinimg.com/236x/55/68/6e/55686eeeb2cb8964489627e7df47c09b.jpg" alt="Tengen" height="350px" >   
+            <img class="anime177" src="https://i.pinimg.com/236x/0a/e4/37/0ae437f94160f9806fe5d8247a476ab1.jpg" alt="Reiner Braun" height="350px" >
+            <img class="anime178" src="https://i.pinimg.com/236x/0f/d7/59/0fd759563eb1c7f7572b1be0d0da3cd2.jpg" alt="Yoshikage Kira" height="350px" >  
+            <img class="anime179" src="https://i.pinimg.com/236x/ae/cc/d3/aeccd370c90e94cd3f04f195c474304e.jpg" alt="Enrico pucci" height="350px" >
+            <img class="anime180" src="https://i.pinimg.com/236x/83/29/17/83291720da50521d30cab8a11e4f1536.jpg" alt="Temari" height="350px" >   
+            <img class="anime181" src="https://i.pinimg.com/236x/c0/bb/ea/c0bbea7b5a06d464acd987b253bd1b9a.jpg" alt="Diavolo" height="350px" >
+            <img class="anime182" src="https://i.pinimg.com/236x/62/0c/f3/620cf3ac585616f5b14e707529712cb3.jpg" alt="Pain" height="350px" >  
+            <img class="anime183" src="https://i.pinimg.com/236x/11/b0/77/11b0773e8db1433a98fb51a9c87da276.jpg" alt="Sai" height="350px" >
+            <img class="anime184" src="https://i.pinimg.com/236x/bf/ba/30/bfba309fdd8004f489045f2ae2cfe6a8.jpg" alt="Trunks" height="350px" > 
+            <img class="anime185" src="https://i.pinimg.com/236x/c0/34/6c/c0346ce13baac681fcea0732caa59cf4.jpg" alt="Suprema Divindade" height="350px" >
+            <img class="anime186" src="https://i.pinimg.com/474x/5b/a6/a9/5ba6a9d53df70cffedd6f6c9e12a6537.jpg" alt="Brook" height="350px" >     
+            <img class="anime187" src="https://i.pinimg.com/236x/30/8e/db/308edb2fda2c3c06112974f4318a6e65.jpg" alt="Danzo" height="350px" >
+            <img class="anime188" src="https://i.pinimg.com/236x/a2/c6/92/a2c692515c1c53ceaf8f72837d91c891.jpg" alt="Hajime Kashimo" height="350px" >
+            <img class="anime189" src="https://i.pinimg.com/236x/d2/b2/90/d2b290e8cf7898eefdd64b68ae477849.jpg" alt="Kento Nanami" height="350px" >
+            <img class="anime190" src="https://i.pinimg.com/236x/93/fa/b3/93fab3592f6d588e328a01da575221b6.jpg"   alt="Yu Haibara" height="350px" >             
+            <img class="anime191" src="https://i.pinimg.com/236x/d7/4b/2d/d74b2dcf20867d3b01eba1118879db39.jpg" alt="Yuki Tsukumo" height="350px" >
+            <img class="anime192" src="https://i.pinimg.com/236x/54/be/1c/54be1c879992bb3d84ccc3cdcb25bc61.jpg" alt="Tsukasa Yuzaki" height="350px" >         
+            <img class="anime193" src="https://i.pinimg.com/236x/3a/a3/52/3aa35297088575eabac3201a51fb5a75.jpg"  alt="Aya Arisugawa" height="350px" >
+            <img class="anime194" src="https://i.pinimg.com/236x/8d/c0/9a/8dc09ad2aa1f6471e989da1afafa6e58.jpg" alt="Yuki Yoshikawa" height="350px" >           
+            <img class="anime195" src="https://i.pinimg.com/236x/93/9a/33/939a33704d6eb4ac738d94ba4f02be6e.jpg" alt="Naofumi Iwatani" height="350px" >
+            <img class="anime196" src="https://i.pinimg.com/236x/18/7e/35/187e357480cee4edaa281fed528a74c4.jpg" alt="Broly" height="350px" >           
+            <img class="anime197" src="https://i.pinimg.com/236x/ae/62/9e/ae629e4dfbdb66aa6916ca2f79a37322.jpg" alt="Blast" height="350px" >
+            <img class="anime198" src="https://i.pinimg.com/236x/02/c5/5a/02c55a9be0c90cb577a198b55543f059.jpg" alt="Akari Watanabe" height="350px" >            
+            <img class="anime199" src="https://i.pinimg.com/236x/b8/98/43/b89843440f40ac22b2511bbc40f391ef.jpg" alt="Hori" height="350px" > 
+            <img class="anime200" src="https://i.pinimg.com/564x/17/a2/40/17a24028d68e49bd3028deee1ba01dd6.jpg"   alt="Ei Nerd" height="350px" >
+            
+        </div>
+        
+        <button onclick="randomizeImage()">Gerar Personagem Aleatório</button>
+    </div>
+
+    <script>
+        function randomizeImage() {
+            var randomNumber = Math.floor(Math.random() * 200) + 1; // Gera um número aleatório entre 1 e 200
+            var selectedImage = document.querySelector('.anime' + randomNumber); // Seleciona a imagem com base no número aleatório
+            var images = document.querySelectorAll('.image-container img'); // Seleciona todas as imagens dentro de .image-container
+
+            // Esconde todas as imagens
+            images.forEach(function(img) {
+                img.style.display = 'none';
+            });
+
+            // Exibe a imagem selecionada
+            selectedImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
